@@ -1,0 +1,572 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+/*------------header--------*/
+header {
+  background: white;
+  position: sticky;
+  top: 0;
+  padding: 15px;
+  z-index: 100;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  font-size: 18px;
+  text-align: left;
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+header .topnav {
+  padding: 20px;
+}
+
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav span {
+  font-size: 30px;
+  padding: 14px 16px;
+  display: block;
+}
+
+.topnav span.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*------------header--------*/
+/*------------home--------*/
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex1 {
+  display: flex;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.btn {
+  padding: 15px 50px;
+  font-size: 20px;
+  background: black;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: #E63B3B;
+  border-radius: 50%;
+}
+
+.home {
+  background: #d9e2ec;
+}
+
+.home .left,
+.home .right {
+  width: 50%;
+  padding: 50px;
+}
+
+.home .left h1 {
+  font-size: 100px;
+  letter-spacing: 3px;
+}
+
+.home p {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.home .right .img {
+  width: 100%;
+  height: 100%;
+}
+
+.home .right img {
+  width: auto;
+  height: auto;
+}
+
+/*------------home--------*/
+/*------------profile--------*/
+.heading {
+  text-align: center;
+}
+
+.heading h2 {
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.heading p {
+  font-size: 22px;
+  margin-top: 20px;
+  white-space: 3px;
+}
+
+.profile {
+  margin-top: 100px;
+}
+
+.profile .content .left {
+  text-align: inherit;
+}
+
+.profile .content .left,
+.profile .content .right {
+  width: 30%;
+  height: auto;
+  place-items: center;
+  margin-top: 10%;
+  padding: 20px;
+}
+
+.profile .content .middle {
+  width: 20%;
+  margin-top: 10%;
+  padding: 20px;
+}
+
+.profile .content .middle img {
+  width: 300px;
+  height: 300px;
+  background: #d9e2ec;
+  border-radius: 50%;
+  margin-top: 35%;
+}
+
+h3 {
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.profile h3 {
+  margin-bottom: 30px;
+}
+
+.profile .content .left p {
+  font-size: 20px;
+  word-spacing: 2px;
+  line-height: 40px;
+  margin-top: 30px;
+}
+
+.profile .content .right label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.profile .content .right span {
+  font-size: 18px;
+}
+
+.profile .content .right ul li {
+  font-size: 25px;
+  background: black;
+  padding: 10px;
+  color: white;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+/*------------profile--------*/
+/*------------about--------*/
+.about {
+  margin-top: 10%;
+}
+
+.about .heading2 {
+  text-align: left;
+  position: relative;
+}
+
+.about .heading2::after {
+  content: '';
+  position: absolute;
+  width: 280px;
+  height: 10px;
+  background: #E63B3B;
+}
+
+.about .content {
+  margin-top: 40px;
+}
+
+.about .content .text {
+  max-width: 50%;
+}
+
+.about .content h5 {
+  font-size: 18px;
+}
+
+.about .content .text2 p {
+  max-width: 50%;
+}
+
+.about .content p {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.about img {
+  width: 90%;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.about .para {
+  background: #E05D5D;
+  height: 500px;
+  width: 500px;
+  transform: translate(-60%, -50%);
+  padding: 70px;
+  color: white;
+}
+
+.about .para h3 {
+  font-size: 20px;
+}
+
+.about .para span {
+  font-size: 25px;
+}
+
+/*------------about--------*/
+/*------------work--------*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.work {
+  background: #d9e2ec;
+}
+
+.work .container {
+  padding: 50px;
+}
+
+.work .container .heading p {
+  color: grey;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.work .container .content {
+  margin-top: 100px;
+  grid-column-gap: 40px;
+  grid-row-gap: 150px;
+}
+
+.work .container .content .icon i {
+  background: #E05D5D;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.work .container .content h1 {
+  letter-spacing: 5px;
+  color: #575151;
+  font-weight: 400;
+}
+
+.work .container .content .box .para p {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 30px;
+  white-space: 5px;
+  letter-spacing: 1px;
+}
+
+.work .container .content .para {
+  padding: 20px;
+}
+
+/*------------work--------*/
+/*------------post--------*/
+.post {
+  margin-top: 15%;
+}
+
+.post .image {
+  max-width: 90%;
+  margin: auto;
+}
+
+.post img {
+  width: 100%;
+  height: 100%;
+}
+
+.post .container {
+  position: relative;
+}
+
+.post .container::after {
+  content: "";
+  position: absolute;
+  background: #E05D5D;
+  width: 500px;
+  height: 105%;
+  top: -10%;
+  left: 20%;
+  z-index: -1;
+}
+
+.post .container .para {
+  width: 40%;
+  height: 600px;
+  background: white;
+  transform: translate(150%, -20%);
+  padding: 50px;
+}
+
+.post .container .para h1 {
+  font-size: 50px;
+}
+
+.post .container .para p {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.post .container .para .btn {
+  background: none;
+  border: 2px solid black;
+  color: black;
+}
+
+/*------------post--------*/
+/*------------customer--------*/
+.customer {
+  background: #d9e2ec;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.customer .container {
+  padding: 50px;
+}
+
+.customer .img {
+  max-width: 250px;
+  height: 250px;
+  margin: auto;
+  background: #E05D5D;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.customer .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: white;
+}
+
+.customer .para {
+  max-width: 70%;
+  margin: auto;
+}
+
+.customer .para p {
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: grey;
+}
+
+/*------------customer--------*/
+/*------------contact--------*/
+.contact {
+  margin-top: 10%;
+  background: #261E1E;
+  color: white;
+}
+
+.contact .heading {
+  text-align: left;
+}
+
+.contact .heading p {
+  letter-spacing: 4px;
+  opacity: 0.8;
+}
+
+.contact .content .left,
+.contact .content .right {
+  width: 50%;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.contact .content .left p {
+  font-size: 20px;
+  line-height: 30px;
+  word-spacing: 3px;
+  opacity: 0.8;
+}
+
+.contact .content .right textarea,
+.contact .content .right input {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+.contact .content .right .btn {
+  border: 2px solid white;
+}
+
+.contact .content .right li {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+/*------------contact--------*/
+@media only screen and (max-width:800px) {
+
+  /*------------home--------*/
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex1 {
+    flex-direction: column;
+  }
+
+  .btn {
+    padding: 15px 50px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    letter-spacing: 3px;
+  }
+
+  .home .left,
+  .home .right {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /*------------home--------*/
+  /*------------profile--------*/
+  .profile .content .left,
+  .profile .content .right {
+    width: 100%;
+  }
+
+  .profile .content .middle {
+    width: 100%;
+  }
+
+  .profile .content .middle img {
+    width: 100%;
+    height: auto;
+    border-radius: 0%;
+    margin-top: 0%;
+  }
+
+  /*------------profile--------*/
+  /*------------about--------*/
+  .about .content .text {
+    max-width: 100%;
+  }
+
+  .about .content .text2 p {
+    max-width: 100%;
+  }
+
+  .about img {
+    width: 100%;
+  }
+
+  .about .para {
+    width: auto;
+    transform: translate(-0%, -0%);
+    margin-top: 20px;
+  }
+
+  /*------------about--------*/
+  /*------------work--------*/
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .work {
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  /*------------work--------*/
+  /*------------post--------*/
+  .post .image {
+    max-width: 100%;
+  }
+
+  .post .container .para {
+    width: 100%;
+    height: 600px;
+    transform: translate(0%, 0%);
+    margin-top: 50px;
+  }
+
+  /*------------post--------*/
+  /*------------contact--------*/
+  .contact .content .left,
+  .contact .content .right {
+    width: 100%;
+  }
+
+  /*------------contact--------*/
+}
